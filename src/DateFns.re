@@ -11,7 +11,7 @@ type locale;
 /* Common helpers */
 /******************/
 
-[@bs.module "date-fns/fp/fp/closestIndexTo"]
+[@bs.module "date-fns/fp/closestIndexTo"]
 external uncurried_closestIndexTo: (. array(date)) => (. date) => int =
   "default";
 
