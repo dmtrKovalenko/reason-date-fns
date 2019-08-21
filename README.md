@@ -5,6 +5,8 @@ This is a project with reason binding for [date-fns v2](https://date-fns.org/v2.
 Simple example:
 
 ```ocaml
+open ReasonDateFns;
+
 Js.Date.make()
 |> DateFns.addDays(2)
 |> DateFns.addDays(-2)
@@ -41,4 +43,5 @@ There is 2:
 2) And using `FP` submodule. So carrying is enabled by default 😎
 
 ## License
-MIT
+This project is under the terms of MIT license 
+
