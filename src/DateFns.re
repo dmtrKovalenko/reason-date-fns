@@ -50,9 +50,9 @@ let compareAsc = curry2(uncurried_compareAsc);
 external uncurried_compareDesc: (. date) => (. date) => int = "default";
 let compareDesc = curry2(uncurried_compareDesc);
 
-[@bs.module "date-fns/fp/fomatDistance"]
-external uncurried_fomatDistance: (. date) => (. date) => string = "default";
-let fomatDistance = curry2(uncurried_fomatDistance);
+[@bs.module "date-fns/fp/formatDistance"]
+external uncurried_formatDistance: (. date) => (. date) => string = "default";
+let formatDistance = curry2(uncurried_formatDistance);
 
 [@bs.module "date-fns/fp/formatRelative"]
 external uncurried_formatRelative: (. date) => (. date) => string = "default";

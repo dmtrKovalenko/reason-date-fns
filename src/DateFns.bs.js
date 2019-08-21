@@ -15,7 +15,7 @@ import * as CompareAsc from "date-fns/fp/compareAsc";
 import * as CompareDesc from "date-fns/fp/compareDesc";
 import * as LightFormat from "date-fns/fp/lightFormat";
 import * as SetDayOfYear from "date-fns/fp/setDayOfYear";
-import * as FomatDistance from "date-fns/fp/fomatDistance";
+import * as FormatDistance from "date-fns/fp/formatDistance";
 import * as FormatRelative from "date-fns/fp/formatRelative";
 import * as AddBusinessDays from "date-fns/fp/addBusinessDays";
 import * as DifferenceInDays from "date-fns/fp/differenceInDays";
@@ -60,9 +60,9 @@ function compareDesc(param, param$1) {
   return Helpers$ReasonDateFns.curry2(partial_arg$5, param, param$1);
 }
 
-var partial_arg$6 = FomatDistance.default;
+var partial_arg$6 = FormatDistance.default;
 
-function fomatDistance(param, param$1) {
+function formatDistance(param, param$1) {
   return Helpers$ReasonDateFns.curry2(partial_arg$6, param, param$1);
 }
 
@@ -163,7 +163,7 @@ export {
   closestTo ,
   compareAsc ,
   compareDesc ,
-  fomatDistance ,
+  formatDistance ,
   formatRelative ,
   isAfter ,
   isBefore ,
