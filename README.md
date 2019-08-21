@@ -4,7 +4,7 @@ This is a project with reason binding for [date-fns v2](https://date-fns.org/v2.
 
 Simple example:
 
-```re
+```ocaml
 Js.Date.make()
 |> DateFns.addDays(2)
 |> DateFns.addDays(-2)
