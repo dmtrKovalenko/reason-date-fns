@@ -1,0 +1,12 @@
+{
+  "curry2": {
+    "prefix": "curry2",
+    "body": [
+      "[@bs.module \"date-fns/$1\"]",
+      "external uncurried_$1: (. $2) => (. date) => $3 =\"default\"",
+      "let $1 = curry2(uncurried_$1);",
+      "",
+      "$4"
+    ]
+  }
+}
