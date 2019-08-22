@@ -38,8 +38,8 @@ And add `reason-date-fns` to your `bsconfig.json`
 
 ## Differences from bs-date-fns
 
-There is 2:
-1) This project is exporting to `date-fns` v2
+There are 2:
+1) This project is exporting to `date-fns` of v2
 2) And using `FP` submodule. So carrying is enabled by default 😎
 
 ## License
