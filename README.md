@@ -1,6 +1,6 @@
 # Reason bindings for date-fns v2
 
-This is a project with reason bindings for [date-fns v2](https://date-fns.org/v2.0.0/docs/Getting-Started). These bindings are using `FP` module of date-fns. So please refer the [FP documentation](https://date-fns.org/v2.0.0/docs/fp/closestIndexTo). In short all methods are carried, and date value is always last argument.
+This is a project with reason bindings for [date-fns v2](https://date-fns.org/v2.0.0/docs/Getting-Started). These bindings are using `FP` module of date-fns. So please refer the [FP documentation](https://date-fns.org/v2.0.0/docs/fp/closestIndexTo). In short all methods are curried, and date value is always last argument.
 
 Simple example:
 
@@ -40,7 +40,7 @@ And add `reason-date-fns` to your `bsconfig.json`
 
 There are 2:
 1) This project is exporting to `date-fns` of v2
-2) And using `FP` submodule. So carrying is enabled by default 😎
+2) And using `FP` submodule. So currying is enabled by default 😎
 
 ## License
 This project is under the terms of MIT license 
