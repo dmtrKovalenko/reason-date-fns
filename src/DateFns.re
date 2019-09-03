@@ -1,11 +1,64 @@
-open Helpers;
+open ReasonDateFnsCurryHelpers;
 
 type date = Js.Date.t;
 
 type locale;
 
-[@bs.module "date-fns/fp/locale/ru"] external ruLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/af"] external afLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ar-DZ"] external arDZLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ar-SA"] external arSALocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ar"] external arLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/be"] external beLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/bg"] external bgLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/bn"] external bnLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ca"] external caLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/cs"] external csLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/cy"] external cyLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/de"] external deLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/el"] external elLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/eo"] external eoLocale: locale = "default";
 [@bs.module "date-fns/fp/locale/en"] external enLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/en-US"] external enUSLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/en-GB"] external enGBLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/en-CA"] external enCALocale: locale = "default";
+[@bs.module "date-fns/fp/locale/es"] external esLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/et"] external etLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/fa-IR"] external faIRLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/fi"] external fiLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/fil"] external filLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/fr"] external frLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/gl"] external glLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/he"] external heLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/hr"] external hrLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/hu"] external huLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/id"] external idLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/is"] external isLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/it"] external itLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ja"] external jaLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ka"] external kaLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ko"] external koLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/lt"] external ltLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/lv"] external lvLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/mk"] external mkLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ms"] external msLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/nl"] external nlLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/pl"] external plLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/pt-Br"] external ptBrLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/pt"] external ptLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ro"] external roLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ru"] external ruLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/sk"] external skLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/sl"] external slLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/sr"] external srLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/sv"] external svLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/th"] external thLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/tr"] external trLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/ug"] external ugLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/uk"] external ukLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/vi"] external viLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/zh-CN"] external zhCNLocale: locale = "default";
+[@bs.module "date-fns/fp/locale/zh-TW"] external zhTWLocale: locale = "default";
+
 
 /******************/
 /* Common helpers */

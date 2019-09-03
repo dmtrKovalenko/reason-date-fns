@@ -8,5 +8,9 @@
       "",
       "$4"
     ]
+  },
+  "locale": {
+    "prefix": "locale",
+    "body": "[@bs.module \"date-fns/fp/locale/$1\"] external $1Locale: locale = \"default\";\n$2"
   }
 }
