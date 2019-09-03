@@ -17,6 +17,12 @@ Js.Date.make()
 
 Js.Date.make()
 |> DateFns.formatWithOptions(
-     DateFns.formatOptions(~locale=DateFns.arLocale, ()),
+     DateFns.formatOptions(~locale=DateFns.Locales.ru, ()),
      "YYYY-MM-DD",
    );
+
+Js.Date.make()
+|> DateFns.addMinutes(10.)
+|> DateFns.addSeconds(10.)
+|> DateFns.addMilliseconds(1000)
+|> Js.log

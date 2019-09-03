@@ -4,7 +4,8 @@
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world"
+    "clean": "bsb -clean-world",
+    "check-js": "node ./lib/js/src/Demo.bs.js"
   },
   "keywords": [
     "BuckleScript"
@@ -12,6 +13,7 @@
   "author": "Dmitriy Kovalenko",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "^4.0.18"
+    "bs-platform": "^4.0.18",
+    "date-fns": "^2.0.1"
   }
 }
