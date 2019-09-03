@@ -1,10 +1,11 @@
 {
   "name": "reason-date-fns",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
+    "release": "yarn publish && git push && git push --tags",
     "check-js": "node ./lib/js/src/Demo.bs.js"
   },
   "keywords": [
