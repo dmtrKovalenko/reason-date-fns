@@ -15,6 +15,12 @@ Js.Date.make()
      Js.Date.make(),
    |])
 |> DateFns.lightFormat("YYYY-MM-DD");
+
+Js.Date.make()
+|> DateFns.formatWithOptions(
+     DateFns.formatOptions(~locale=DateFns.arLocale, ()),
+     "YYYY-MM-DD",
+   );
 ```
 
 
