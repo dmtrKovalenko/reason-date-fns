@@ -203,7 +203,7 @@ let subDays = curry2(uncurried_subDays);
 external uncurried_addMilliseconds: (. int) => (. date) => date = "default";
 let addMilliseconds = curry2(uncurried_addMilliseconds);
 
-[@bs.module "date-fns/differenceInMilliseconds"]
+[@bs.module "date-fns/fp/differenceInMilliseconds"]
 external uncurried_differenceInMilliseconds: (. date) => (. date) => int =
   "default";
 let differenceInMilliseconds = curry2(uncurried_differenceInMilliseconds);
@@ -211,11 +211,11 @@ let differenceInMilliseconds = curry2(uncurried_differenceInMilliseconds);
 [@bs.module "date-fns/fp/getMilliseconds"]
 external getMilliseconds: date => int = "default";
 
-[@bs.module "date-fns/setMilliseconds"]
+[@bs.module "date-fns/fp/setMilliseconds"]
 external uncurried_setMilliseconds: (. int) => (. date) => date = "default";
 let setMilliseconds = curry2(uncurried_setMilliseconds);
 
-[@bs.module "date-fns/subMilliseconds"]
+[@bs.module "date-fns/fp/subMilliseconds"]
 external uncurried_subMilliseconds: (. int) => (. date) => date = "default";
 let subMilliseconds = curry2(uncurried_subMilliseconds);
 
@@ -241,15 +241,15 @@ external startOfSecond: date => date = "default";
 [@bs.module "date-fns/fp/getSeconds"]
 external getSeconds: date => float = "default";
 
-[@bs.module "date-fns/setSeconds"]
+[@bs.module "date-fns/fp/setSeconds"]
 external uncurried_setSeconds: (. float) => (. date) => date = "default";
 let setSeconds = curry2(uncurried_setSeconds);
 
-[@bs.module "date-fns/isSameSecond"]
+[@bs.module "date-fns/fp/isSameSecond"]
 external uncurried_isSameSecond: (. date) => (. date) => bool = "default";
 let isSameSecond = curry2(uncurried_isSameSecond);
 
-[@bs.module "date-fns/subSeconds"]
+[@bs.module "date-fns/fp/subSeconds"]
 external uncurried_subSeconds: (. float) => (. date) => date = "default";
 let subSeconds = curry2(uncurried_subSeconds);
 
@@ -261,7 +261,7 @@ let subSeconds = curry2(uncurried_subSeconds);
 external uncurried_addMinutes: (. float) => (. date) => date = "default";
 let addMinutes = curry2(uncurried_addMinutes);
 
-[@bs.module "date-fns/differenceInMinutes"]
+[@bs.module "date-fns/fp/differenceInMinutes"]
 external uncurried_differenceInMinutes: (. date) => (. date) => float =
   "default";
 let differenceInMinutes = curry2(uncurried_differenceInMinutes);
@@ -275,15 +275,15 @@ external startOfMinute: date => date = "default";
 [@bs.module "date-fns/fp/getMinutes"]
 external getMinutes: date => float = "default";
 
-[@bs.module "date-fns/setMinutes"]
+[@bs.module "date-fns/fp/setMinutes"]
 external uncurried_setMinutes: (. float) => (. date) => date = "default";
 let setMinutes = curry2(uncurried_setMinutes);
 
-[@bs.module "date-fns/isSameMinute"]
+[@bs.module "date-fns/fp/isSameMinute"]
 external uncurried_isSameMinute: (. date) => (. date) => bool = "default";
 let isSameMinute = curry2(uncurried_isSameMinute);
 
-[@bs.module "date-fns/subMinutes"]
+[@bs.module "date-fns/fp/subMinutes"]
 external uncurried_subMinutes: (. float) => (. date) => date = "default";
 let subMinutes = curry2(uncurried_subMinutes);
 
@@ -298,7 +298,7 @@ external roundToNearestMinutes: date => float = "default";
 external uncurried_addHours: (. float) => (. date) => date = "default";
 let addHours = curry2(uncurried_addHours);
 
-[@bs.module "date-fns/differenceInHours"]
+[@bs.module "date-fns/fp/differenceInHours"]
 external uncurried_differenceInHours: (. date) => (. date) => float =
   "default";
 let differenceInHours = curry2(uncurried_differenceInHours);
@@ -312,14 +312,14 @@ external startOfHour: date => date = "default";
 [@bs.module "date-fns/fp/getHours"]
 external getHours: date => float = "default";
 
-[@bs.module "date-fns/setHours"]
+[@bs.module "date-fns/fp/setHours"]
 external uncurried_setHours: (. float) => (. date) => date = "default";
 let setHours = curry2(uncurried_setHours);
 
-[@bs.module "date-fns/isSameHour"]
+[@bs.module "date-fns/fp/isSameHour"]
 external uncurried_isSameHour: (. date) => (. date) => bool = "default";
 let isSameHour = curry2(uncurried_isSameHour);
 
-[@bs.module "date-fns/subHours"]
+[@bs.module "date-fns/fp/subHours"]
 external uncurried_subHours: (. float) => (. date) => date = "default";
 let subHours = curry2(uncurried_subHours);
