@@ -107,6 +107,44 @@ let compareDesc = curry2(uncurried_compareDesc);
 external uncurried_formatDistance: (. date) => (. date) => string = "default";
 let formatDistance = curry2(uncurried_formatDistance);
 
+[@bs.deriving abstract]
+type formatDistanceOptions = {
+  [@bs.optional]
+  locale,
+  [@bs.optional]
+  addSuffix: bool,
+  [@bs.optional]
+  includeSeconds: bool,
+};
+
+[@bs.module "date-fns/fp/formatDistanceWithOptions"]
+external uncurried_formatDistanceWithOptions:
+  (. formatDistanceOptions) => (. date) => string =
+  "default";
+let formatDistanceWithOptions = curry2(uncurried_formatDistanceWithOptions);
+
+[@bs.module "date-fns/formatDistanceStrict"]
+external formatDistanceStrict: (. date) => (. date) => string = "default";
+let formatDistanceStrict = curry2(formatDistanceStrict);
+
+[@bs.deriving abstract]
+type formatDistanceStrictOptions = {
+  [@bs.optional]
+  locale,
+  [@bs.optional]
+  roundingMethod: [ | `floor | `ceil | `round],
+  [@bs.optional]
+  unit: [ | `second | `minute | `hour | `day | `month | `year],
+  [@bs.optional]
+  addSuffix: bool,
+};
+
+[@bs.module "date-fns/fp/formatDistanceStrictWithOptions"]
+external uncurried_formatDistanceStrictWithOptions:
+  (. formatDistanceStrictOptions) => (. date) => string =
+  "default";
+let formatDistanceStrictWithOptions = curry2(uncurried_formatDistanceStrictWithOptions);
+
 [@bs.module "date-fns/fp/formatRelative"]
 external uncurried_formatRelative: (. date) => (. date) => string = "default";
 let formatRelative = curry2(uncurried_formatRelative);
