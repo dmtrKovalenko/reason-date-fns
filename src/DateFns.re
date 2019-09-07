@@ -119,9 +119,9 @@ type formatDistanceOptions = {
 
 [@bs.module "date-fns/fp/formatDistanceWithOptions"]
 external uncurried_formatDistanceWithOptions:
-  (. formatDistanceOptions) => (. date) => string =
+  (. formatDistanceOptions) => (. date) => (. date) => string =
   "default";
-let formatDistanceWithOptions = curry2(uncurried_formatDistanceWithOptions);
+let formatDistanceWithOptions = curry3(uncurried_formatDistanceWithOptions);
 
 [@bs.module "date-fns/formatDistanceStrict"]
 external formatDistanceStrict: (. date) => (. date) => string = "default";
@@ -141,7 +141,7 @@ type formatDistanceStrictOptions = {
 
 [@bs.module "date-fns/fp/formatDistanceStrictWithOptions"]
 external uncurried_formatDistanceStrictWithOptions:
-  (. formatDistanceStrictOptions) => (. date) => string =
+  (. formatDistanceStrictOptions) => (. date) => (. date) => string =
   "default";
 let formatDistanceStrictWithOptions = curry2(uncurried_formatDistanceStrictWithOptions);
 
