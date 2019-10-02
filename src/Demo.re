@@ -25,4 +25,10 @@ Js.Date.make()
 |> DateFns.addMinutes(10.)
 |> DateFns.addSeconds(10.)
 |> DateFns.addMilliseconds(1000)
-|> Js.log
+|> Js.log;
+
+Js.Date.make()
+|> DateFns.addDays(1)
+|> DateFns.startOfDay
+|> DateFns.setHours(7.)
+|> Js.log2("test");

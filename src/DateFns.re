@@ -221,10 +221,6 @@ external getDayOfYear: date => int = "default";
 external uncurried_isSameDay: (. date) => (. date) => bool = "default";
 let isSameDay = curry2(uncurried_isSameDay);
 
-[@bs.module "date-fns/fp/setDay"]
-external uncurried_setDay: (. int) => (. date) => date = "default";
-let setDay = curry2(uncurried_setDay);
-
 [@bs.module "date-fns/fp/setDayOfYear"]
 external uncurried_setDayOfYear: (. int) => (. date) => date = "default";
 let setDayOfYear = curry2(uncurried_setDayOfYear);
@@ -361,3 +357,199 @@ let isSameHour = curry2(uncurried_isSameHour);
 [@bs.module "date-fns/fp/subHours"]
 external uncurried_subHours: (. float) => (. date) => date = "default";
 let subHours = curry2(uncurried_subHours);
+
+/***************/
+/* Weekday helpers */
+/***************/
+
+[@bs.module "date-fns/fp/getDay"]
+external getDay: date => int = "default";
+
+[@bs.module "date-fns/fp/getISODay"]
+external getISODay: date => int = "default";
+
+[@bs.module "date-fns/fp/isMonday"]
+external isMonday: date => bool = "default";
+
+[@bs.module "date-fns/fp/isSaturday"]
+external isSaturday: date => bool = "default";
+
+[@bs.module "date-fns/fp/isSunday"]
+external isSunday: date => bool = "default";
+
+[@bs.module "date-fns/fp/isThursday"]
+external isThursday: date => bool = "default";
+
+[@bs.module "date-fns/fp/isTuesday"]
+external isTuesday: date => bool = "default";
+
+[@bs.module "date-fns/fp/isWednesday"]
+external isWednesday: date => bool = "default";
+
+[@bs.module "date-fns/fp/isWeekend"]
+external isWeekend: date => bool = "default";
+
+[@bs.module "date-fns/setDay"]
+external uncurried_setDay: (. date) => (. date) => date ="default"
+let setDay = curry2(uncurried_setDay);
+
+[@bs.deriving abstract]
+type setDayOptions = {
+  [@bs.optional]
+  locale,
+  [@bs.optional]
+  weekStartsOn: int,
+};
+
+[@bs.module "date-fns/setDayWithOptions"]
+external uncurried_setDayWithOptions: (. setDayOptions) => (. date) => (. date) => date ="setDayWithOptions"
+let setDayWithOptions = curry2(uncurried_setDayWithOptions);
+
+[@bs.module "date-fns/setISODay"]
+external uncurried_setISODay: (. date) => (. date) => date ="default"
+let setISODay = curry2(uncurried_setISODay);
+
+
+/***************/
+/* Week helpers */
+/***************/
+
+[@bs.module "date-fns/fp/addWeeks"]
+external uncurried_addWeeks: (. float) => (. date) => date = "default";
+let addWeeks = curry2(uncurried_addWeeks);
+
+[@bs.module "date-fns/fp/differenceInWeeks"]
+external uncurried_differenceInWeeks: (. date) => (. date) => float =
+  "default";
+let differenceInWeeks = curry2(uncurried_differenceInWeeks);
+
+[@bs.module "date-fns/fp/endOfWeek"]
+external endOfWeek: date => date = "default";
+
+[@bs.module "date-fns/fp/startOfWeek"]
+external startOfWeek: date => date = "default";
+
+[@bs.module "date-fns/fp/getWeeks"]
+external getWeeks: date => float = "default";
+
+[@bs.module "date-fns/fp/setWeeks"]
+external uncurried_setWeeks: (. float) => (. date) => date = "default";
+let setWeeks = curry2(uncurried_setWeeks);
+
+[@bs.module "date-fns/fp/isSameWeek"]
+external uncurried_isSameWeek: (. date) => (. date) => bool = "default";
+let isSameWeek = curry2(uncurried_isSameWeek);
+
+[@bs.module "date-fns/fp/subWeeks"]
+external uncurried_subWeeks: (. float) => (. date) => date = "default";
+let subWeeks = curry2(uncurried_subWeeks);
+
+[@bs.module "date-fns/fp/getWeeksInMonth"]
+external getWeeksInMonth: date => int = "default";
+
+[@bs.module "date-fns/fp/getWeekOfMonth"]
+external getWeekOfMonth: date => int = "default";
+
+/***************/
+/* Month helpers */
+/***************/
+
+[@bs.module "date-fns/fp/addMonths"]
+external uncurried_addMonths: (. float) => (. date) => date = "default";
+let addMonths = curry2(uncurried_addMonths);
+
+[@bs.module "date-fns/fp/differenceInMonths"]
+external uncurried_differenceInMonths: (. date) => (. date) => float =
+  "default";
+let differenceInMonths = curry2(uncurried_differenceInMonths);
+
+[@bs.module "date-fns/fp/differenceInCalendarMonths"]
+external uncurried_differenceInCalendarMonths: (. date) => (. date) => float =
+  "default";
+let differenceInCalendarMonths = curry2(uncurried_differenceInCalendarMonths);
+
+[@bs.module "date-fns/fp/eachWeekendOfMonth"]
+external eachWeekendOfMonth: date => array(date) = "default";
+
+[@bs.module "date-fns/fp/getDaysInMonth"]
+external getDaysInMonth: date => int = "default";
+
+[@bs.module "date-fns/fp/endOfMonth"]
+external endOfMonth: date => date = "default";
+
+[@bs.module "date-fns/fp/startOfMonth"]
+external startOfMonth: date => date = "default";
+
+[@bs.module "date-fns/fp/getMonth"]
+external getMonth: date => float = "default";
+
+[@bs.module "date-fns/fp/setMonth"]
+external uncurried_setMonth: (. float) => (. date) => date = "default";
+let setMonth = curry2(uncurried_setMonth);
+
+[@bs.module "date-fns/fp/isSameMonth"]
+external uncurried_isSameMonth: (. date) => (. date) => bool = "default";
+let isSameMonth = curry2(uncurried_isSameMonth);
+
+[@bs.module "date-fns/fp/subMonths"]
+external uncurried_subMonths: (. float) => (. date) => date = "default";
+let subMonths = curry2(uncurried_subMonths);
+
+[@bs.module "date-fns/fp/isFirstDayOfMonth"]
+external uncurried_isFirstDayOfMonth: (. date) => (. date) => bool = "default";
+let isFirstDayOfMonth = curry2(uncurried_isFirstDayOfMonth);
+
+[@bs.module "date-fns/fp/isLastDayOfMonth"]
+external uncurried_isLastDayOfMonth: (. date) => (. date) => bool = "default";
+let isLastDayOfMonth = curry2(uncurried_isLastDayOfMonth);
+
+/***************/
+/* Year helpers */
+/***************/
+
+[@bs.module "date-fns/fp/addYears"]
+external uncurried_addYears: (. float) => (. date) => date = "default";
+let addYears = curry2(uncurried_addYears);
+
+[@bs.module "date-fns/fp/differenceInYears"]
+external uncurried_differenceInYears: (. date) => (. date) => float =
+  "default";
+let differenceInYears = curry2(uncurried_differenceInYears);
+
+[@bs.module "date-fns/fp/differenceInCalendarYears"]
+external uncurried_differenceInCalendarYears: (. date) => (. date) => float =
+  "default";
+let differenceInCalendarYears = curry2(uncurried_differenceInCalendarYears);
+
+[@bs.module "date-fns/fp/eachWeekendOfYear"]
+external eachWeekendOfYear: date => array(date) = "default";
+
+[@bs.module "date-fns/fp/getDaysInYear"]
+external getDaysInYear: date => int = "default";
+
+[@bs.module "date-fns/fp/endOfYear"]
+external endOfYear: date => date = "default";
+
+[@bs.module "date-fns/fp/startOfYear"]
+external startOfYear: date => date = "default";
+
+[@bs.module "date-fns/fp/getYear"]
+external getYear: date => float = "default";
+
+[@bs.module "date-fns/fp/setYear"]
+external uncurried_setYear: (. float) => (. date) => date = "default";
+let setYear = curry2(uncurried_setYear);
+
+[@bs.module "date-fns/fp/isSameYear"]
+external uncurried_isSameYear: (. date) => (. date) => bool = "default";
+let isSameYear = curry2(uncurried_isSameYear);
+
+[@bs.module "date-fns/fp/subYears"]
+external uncurried_subYears: (. float) => (. date) => date = "default";
+let subYears = curry2(uncurried_subYears);
+
+[@bs.module "date-fns/fp/lastDayOfYear"]
+external uncurried_lastDayOfYear: date => date = "default";
+
+[@bs.module "date-fns/fp/isLeapYear"]
+external uncurried_isLeapYear: date => bool = "default";
