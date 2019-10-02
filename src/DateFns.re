@@ -429,12 +429,12 @@ external endOfWeek: date => date = "default";
 [@bs.module "date-fns/fp/startOfWeek"]
 external startOfWeek: date => date = "default";
 
-[@bs.module "date-fns/fp/getWeeks"]
-external getWeeks: date => float = "default";
+[@bs.module "date-fns/fp/getWeek"]
+external getWeek: date => float = "default";
 
-[@bs.module "date-fns/fp/setWeeks"]
-external uncurried_setWeeks: (. float) => (. date) => date = "default";
-let setWeeks = curry2(uncurried_setWeeks);
+[@bs.module "date-fns/fp/setWeek"]
+external uncurried_setWeek: (. float) => (. date) => date = "default";
+let setWeek = curry2(uncurried_setWeek);
 
 [@bs.module "date-fns/fp/isSameWeek"]
 external uncurried_isSameWeek: (. date) => (. date) => bool = "default";
