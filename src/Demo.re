@@ -13,12 +13,12 @@ Js.Date.make()
      DateFns.parseISO("2019-08-21T13:00:03.058Z"),
      Js.Date.make(),
    |])
-|> DateFns.lightFormat("YYYY-MM-DD");
+|> DateFns.lightFormat("yyyy-MM-dd");
 
 Js.Date.make()
 |> DateFns.formatWithOptions(
      DateFns.formatOptions(~locale=DateFns.Locales.ru, ()),
-     "YYYY-MM-DD",
+     "yyyy-MM-dd",
    );
 
 Js.Date.make()

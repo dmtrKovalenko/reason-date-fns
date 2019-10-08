@@ -123,7 +123,7 @@ external uncurried_formatDistanceWithOptions:
   "default";
 let formatDistanceWithOptions = curry3(uncurried_formatDistanceWithOptions);
 
-[@bs.module "date-fns/formatDistanceStrict"]
+[@bs.module "date-fns/fp/formatDistanceStrict"]
 external formatDistanceStrict: (. date) => (. date) => string = "default";
 let formatDistanceStrict = curry2(formatDistanceStrict);
 
@@ -261,7 +261,7 @@ let subMilliseconds = curry2(uncurried_subMilliseconds);
 external uncurried_addSeconds: (. float) => (. date) => date = "default";
 let addSeconds = curry2(uncurried_addSeconds);
 
-[@bs.module "date-fns/differenceInSeconds"]
+[@bs.module "date-fns/fp/differenceInSeconds"]
 external uncurried_differenceInSeconds: (. date) => (. date) => float =
   "default";
 let differenceInSeconds = curry2(uncurried_differenceInSeconds);
@@ -389,7 +389,7 @@ external isWednesday: date => bool = "default";
 [@bs.module "date-fns/fp/isWeekend"]
 external isWeekend: date => bool = "default";
 
-[@bs.module "date-fns/setDay"]
+[@bs.module "date-fns/fp/setDay"]
 external uncurried_setDay: (. date) => (. date) => date ="default"
 let setDay = curry2(uncurried_setDay);
 
@@ -401,11 +401,11 @@ type setDayOptions = {
   weekStartsOn: int,
 };
 
-[@bs.module "date-fns/setDayWithOptions"]
+[@bs.module "date-fns/fp/setDayWithOptions"]
 external uncurried_setDayWithOptions: (. setDayOptions) => (. date) => (. date) => date ="setDayWithOptions"
 let setDayWithOptions = curry2(uncurried_setDayWithOptions);
 
-[@bs.module "date-fns/setISODay"]
+[@bs.module "date-fns/fp/setISODay"]
 external uncurried_setISODay: (. date) => (. date) => date ="default"
 let setISODay = curry2(uncurried_setISODay);
 
