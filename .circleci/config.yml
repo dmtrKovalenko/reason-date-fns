@@ -26,27 +26,8 @@ jobs:
           name: Check that nothing crashes
           command: yarn demo:test
 
-  release:
-    executor: node
-    steps:
-      - attach_workspace:
-          at: ~/reason-date-fns
-      - run:
-          name: Authenticate with registry
-          command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/reason-date-fns/.npmrc
-      - run:
-          name: Publish package
-          command: npm publish
-
 workflows:
   version: 2
   test-deploy:
     jobs:
       - test
-      - release:
-          requires:
-            - test
-          filters:
-            branches:
-              only:
-                - master
