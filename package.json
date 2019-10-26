@@ -21,12 +21,12 @@
   "sideEffects": false,
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mui-org/material-ui-pickers/issues"
+    "url": "https://github.com/dmtrKovalenko/reason-date-fns/issues"
   },
-  "homepage": "https://material-ui-pickers.dev/",
+  "homepage": "https://github.com/dmtrKovalenko/reason-date-fns",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mui-org/material-ui-pickers"
+    "url": "https://github.com/dmtrKovalenko/reason-date-fns"
   },
   "author": {
     "name": "Dmitriy Kovalenko",
