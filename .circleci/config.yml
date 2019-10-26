@@ -1,11 +1,13 @@
 version: 2.1
-jobs:
-  build:
+executors:
+  node:
     docker:
-      - image: circleci/node:10.17.0
-        environment:
-          ## this enables colors in the output
-          TERM: xterm
+      - image: node:10
+    working_directory: ~/reason-date-fns
+
+jobs:
+  test:
+    executor: node
     steps:
       - checkout
       - restore_cache:
@@ -23,3 +25,9 @@ jobs:
       - run:
           name: Check that nothing crashes
           command: yarn demo:test
+
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - test
