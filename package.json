@@ -17,11 +17,11 @@
   "author": "Dmitriy Kovalenko",
   "license": "MIT",
   "peerDependencies": {
-    "date-fns": "^2.0.1"
+    "date-fns": "^2.6.0"
   },
   "devDependencies": {
     "bs-platform": "^5.2.1",
-    "date-fns": "^2.0.1",
+    "date-fns": "^2.6.0",
     "rollup": "^1.25.2"
   }
 }
