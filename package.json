@@ -38,6 +38,6 @@
   "devDependencies": {
     "bs-platform": "^5.2.1",
     "date-fns": "^2.6.0",
-    "rollup": "^1.25.2"
+    "rollup": "^1.26.3"
   }
 }
