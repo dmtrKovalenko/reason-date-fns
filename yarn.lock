@@ -22,10 +22,10 @@ bs-platform@^7.0.1:
   resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-7.0.1.tgz#1d7b0ef6088b998dceee5db74a7cd8f01c20a3bd"
   integrity sha512-UjStdtHhbtC/l6vKJ1XRDqrPk7rFf5PLYHtRX3akDXEYVnTbN36z0g4DEr5mU8S0N945e33HYts9x+i7hKKpZQ==
 
-date-fns@^2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.8.1.tgz#2109362ccb6c87c3ca011e9e31f702bc09e4123b"
-  integrity sha512-EL/C8IHvYRwAHYgFRse4MGAPSqlJVlOrhVYZ75iQBKrnv+ZedmYsgwH3t+BCDuZDXpoo07+q9j4qgSSOa7irJg==
+date-fns@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.9.0.tgz#d0b175a5c37ed5f17b97e2272bbc1fa5aec677d2"
+  integrity sha512-khbFLu/MlzLjEzy9Gh8oY1hNt/Dvxw3J6Rbc28cVoYWQaC1S3YI4xwkF9ZWcjDLscbZlY9hISMr66RFzZagLsA==
 
 rollup@^1.28.0:
   version "1.28.0"
