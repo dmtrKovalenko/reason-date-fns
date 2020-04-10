@@ -33,11 +33,11 @@
     "email": "dmtr.kovalenko@outlook.com"
   },
   "peerDependencies": {
-    "date-fns": "^2.11.1"
+    "date-fns": "^2.12.0"
   },
   "devDependencies": {
     "bs-platform": "^7.2.2",
-    "date-fns": "^2.11.1",
+    "date-fns": "^2.12.0",
     "rollup": "^1.32.1"
   }
 }
