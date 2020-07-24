@@ -183,6 +183,8 @@ external parseISO: string => date = "default";
 
 [@bs.module "date-fns/fp/toDate"] external toDate: int => date = "default";
 
+[@bs.module "date-fns/fp/fromUnixTime"] external fromUnixTime: float => date = "default";
+
 /***************/
 /* Day helpers */
 /***************/
