@@ -1,6 +1,6 @@
 # Reason bindings for date-fns v2
 
-This is a project with reason bindings for [date-fns v2](https://date-fns.org/v2.0.0/docs/Getting-Started). These bindings are using `FP` module of date-fns. So please refer the [FP documentation](https://date-fns.org/v2.0.0/docs/fp/closestIndexTo). In short all methods are curried, and date value is always last argument.
+This is a project with reason bindings for [date-fns v2](https://date-fns.org/v2.0.0/docs/Getting-Started). These bindings are using `FP` module of date-fns. So please refer the [FP documentation](https://date-fns.org/v2.0.0/docs/FP-Guide). In short all methods are curried, and date value is always last argument.
 
 Simple example:
 
