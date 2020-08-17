@@ -399,18 +399,6 @@ external isWeekend: date => bool = "default";
 external uncurried_setDay: (. date) => (. date) => date ="default"
 let setDay = curry2(uncurried_setDay);
 
-[@bs.deriving abstract]
-type setDayOptions = {
-  [@bs.optional]
-  locale,
-  [@bs.optional]
-  weekStartsOn: int,
-};
-
-[@bs.module "date-fns/fp/setDayWithOptions"]
-external uncurried_setDayWithOptions: (. setDayOptions) => (. date) => (. date) => date ="setDayWithOptions"
-let setDayWithOptions = curry2(uncurried_setDayWithOptions);
-
 [@bs.module "date-fns/fp/setISODay"]
 external uncurried_setISODay: (. date) => (. date) => date ="default"
 let setISODay = curry2(uncurried_setISODay);
