@@ -5,10 +5,13 @@
     "dir" : "src",
     "subdirs" : true
   },
-  "package-specs": {
+  "package-specs": [{
     "module": "es6",
     "in-source": false
-  },
+  }, {
+    "module": "commonjs",
+    "in-source": false
+  }],
   "suffix": ".bs.js",
   "bs-dependencies": [
 
