@@ -1,7 +1,6 @@
 {
   "name": "reason-date-fns",
   "version": "1.0.0",
-  "type": "module",
   "main": "lib/js/src/DateFns.bs.js",
   "module": "lib/es6/src/DateFns.bs.js",
   "scripts": {
