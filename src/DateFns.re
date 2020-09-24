@@ -407,8 +407,8 @@ type setDayOptions = {
   weekStartsOn: int,
 };
 
-[@bs.module "date-fns/fp/setDayWithOptions"]
-external uncurried_setDayWithOptions: (. setDayOptions) => (. date) => (. date) => date ="setDayWithOptions"
+[@bs.module "date-fns/fp/setDay"]
+external uncurried_setDayWithOptions: (. setDayOptions) => (. date) => (. date) => date ="setDay"
 let setDayWithOptions = curry2(uncurried_setDayWithOptions);
 
 [@bs.module "date-fns/fp/setISODay"]
