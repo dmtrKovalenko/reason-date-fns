@@ -7,7 +7,7 @@
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
     "clean": "bsb -clean-world",
-    "release": "yarn demo:test && yarn publish && git push && git push --tags",
+    "release": "yarn build && yarn demo:test && yarn publish && git push && git push --tags",
     "check-js": "node ./lib/js/src/Demo.bs.js",
     "demo:bundle": "yarn rollup lib/es6/src/Demo.bs.js --format cjs --file bundle/demo.js",
     "demo:test": "yarn demo:bundle && node bundle/demo.js"
