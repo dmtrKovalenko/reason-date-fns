@@ -408,7 +408,7 @@ type setDayOptions = {
 };
 
 [@bs.module "date-fns/fp/setDay"]
-external uncurried_setDayWithOptions: (. setDayOptions) => (. date) => (. date) => date ="setDay"
+external uncurried_setDayWithOptions: (. setDayOptions) => (. date) => (. date) => date ="default"
 let setDayWithOptions = curry2(uncurried_setDayWithOptions);
 
 [@bs.module "date-fns/fp/setISODay"]
