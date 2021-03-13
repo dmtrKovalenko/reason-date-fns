@@ -37,7 +37,7 @@
     "date-fns": "^2.19.0"
   },
   "devDependencies": {
-    "bs-platform": "^9.0.1",
+    "bs-platform": "^9.0.2",
     "date-fns": "^2.19.0",
     "rollup": "^2.41.2"
   }
