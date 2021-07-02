@@ -17,9 +17,9 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-rollup@^2.52.3:
-  version "2.52.3"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.52.3.tgz#062fc3c85f67736d6758749310cfee64836c4e2a"
-  integrity sha512-QF3Sju8Kl2z0osI4unyOLyUudyhOMK6G0AeqJWgfiyigqLAlnNrfBcDWDx+f1cqn+JU2iIYVkDrgQ6/KtwEfrg==
+rollup@^2.52.7:
+  version "2.52.7"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.52.7.tgz#e15a8bf734f6e4c204b7cdf33521151310250cb2"
+  integrity sha512-55cSH4CCU6MaPr9TAOyrIC+7qFCHscL7tkNsm1MBfIJRRqRbCEY0mmeFn4Wg8FKsHtEH8r389Fz38r/o+kgXLg==
   optionalDependencies:
     fsevents "~2.3.2"
