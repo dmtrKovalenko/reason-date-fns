@@ -2,7 +2,7 @@ version: 2.1
 executors:
   node:
     docker:
-      - image: node:20.18.2
+      - image: node:22.13.1
     working_directory: ~/reason-date-fns
 
 jobs:
